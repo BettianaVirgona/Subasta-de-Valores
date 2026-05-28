@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Configuración inicial
-st.set_page_config(page_title="Dinámica de Valores", page_icon="🌟", layout="centered")
+st.set_page_config(page_title="Subasta de Valores", page_icon="🌟", layout="centered")
 
 # --- MEMORIA DE LA APP (Session State) ---
 # Esto permite que la app recuerde los valores cargados paso a paso
@@ -12,7 +12,7 @@ if 'valores_cargados' not in st.session_state:
 if 'puntos_restantes' not in st.session_state:
     st.session_state.puntos_restantes = 100
 
-st.title("🌟 Dinámica: Mapa de Valores")
+st.title("🌟 Subasta de Valores")
 st.write("Agrega los principios que guían tu forma de actuar. ¡Tienes **100 puntos** en total para repartir entre todos ellos!")
 
 # 1. Mostrar cuántos puntos le quedan (100 - X)
